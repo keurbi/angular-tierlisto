@@ -91,4 +91,24 @@
     font-size: 40px;
     color: #2b75ed;
   }
+
+  &:nth-child(1) .en-tete {
+    background-color: green;
+  }
+
+  &:nth-child(2) .en-tete {
+    background-color: greenyellow;
+  }
+
+  &:nth-child(3) .en-tete {
+    background-color: yellow;
+  }
+
+  &:nth-child(4) .en-tete {
+    background-color: orange;
+  }
+
+  &:nth-child(5) .en-tete {
+    background-color: red;
+  }
 }

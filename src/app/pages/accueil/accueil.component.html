@@ -1,13 +1,15 @@
 <div class="boutonPlus" (click)="onClick()">+</div>
 
 {{ compteur }}
+<div class="categories">
+  @for (categorie of listeCategories; track $index) {
 
-@for (categorie of listeCategories; track $index) {
-
-<div class="categorie">
-  <div class="en-tete">
-    {{ categorie }}
+  <div class="categorie">
+    <div class="en-tete">
+      {{ categorie }}
+    </div>
+    <div class="images">Liste des images</div>
   </div>
-  <div class="images">Liste des images</div>
+
+  }
 </div>
-}

@@ -9,7 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AccueilComponent {
   compteur = 0;
+
   listeCategories = ['S', 'A', 'B', 'D', 'E'];
+
   onClick() {
     this.compteur++;
   }
