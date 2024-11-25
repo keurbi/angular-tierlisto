@@ -1,1 +1,13 @@
-<p>accueil works!</p>
+<div class="boutonPlus" (click)="onClick()">+</div>
+
+{{ compteur }}
+
+@for (categorie of listeCategories; track $index) {
+
+<div class="categorie">
+  <div class="en-tete">
+    {{ categorie }}
+  </div>
+  <div class="images">Liste des images</div>
+</div>
+}
