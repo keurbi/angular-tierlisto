@@ -1,14 +1,23 @@
-<div class="boutonPlus" (click)="onClick()">+</div>
+<input type="text" [(ngModel)]="saisieImage" />
+<div class="btn btn-primary" (click)="ajoutImage()">Ajouter image</div>
 
-{{ compteur }}
 <div class="categories">
   @for (categorie of listeCategories; track $index) {
 
   <div class="categorie">
     <div class="en-tete">
-      {{ categorie }}
+      <span>{{ categorie.titre }}</span>
     </div>
-    <div class="images">Liste des images</div>
+    <div class="images">
+      @for (image of categorie.images; track $index) {
+      <div class="image">
+        <div class="bouton bouton-plus">+</div>
+        <div class="bouton bouton-moins">-</div>
+        <img src="{{ image }}" />
+      </div>
+
+      }
+    </div>
   </div>
 
   }
