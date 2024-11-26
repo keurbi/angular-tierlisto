@@ -1,11 +1,11 @@
-<form [formGroup]="formulaire">
+<form [formGroup]="formulaire" (ngSubmit)="(onConnexion)">
   <mat-form-field>
     <mat-label>Email</mat-label>
     <input matInput placeholder="Email" formControlName="email" />
     @if(formulaire.get('email')?.hasError('required')) {
-        <mat-errot>L'email est requis</mat-errot>
+    <mat-error>L'email est requis</mat-error>
     } @else {
-        <mat-errot>L'email est invalide</mat-errot>
+    <mat-error>L'email est invalide</mat-error>
     }
   </mat-form-field>
 

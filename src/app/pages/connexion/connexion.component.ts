@@ -29,4 +29,10 @@ export class ConnexionComponent {
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required]],
   });
+
+  onConnexion() {
+    if (this.formulaire.valid) {
+      console.log(this.formulaire.value);
+    }
+  }
 }
